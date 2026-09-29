@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Push-Up – Push-Up</title>
+<title>E-Mail bestätigt / Email confirmed – Push-Up</title>
 <style>
 :root{--bg:#f4f5f8;--card:#fff;--text:#111318;--muted:#6b7280;--accent:#ff5a1f;--border:#e2e5ea}
 @media (prefers-color-scheme:dark){:root{--bg:#0b0d10;--card:#15181d;--text:#f4f5f7;--muted:#8a919c;--border:#2a2f37}}
@@ -17,11 +17,26 @@ ul{padding-left:22px}
 </style></head>
 <body><main><div class="brand">Push-Up</div><nav><a href="datenschutz.html">Datenschutz</a> <a href="privacy.html">Privacy</a> <a href="konto-loeschen.html">Konto löschen / Delete account</a> <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a> <a href="terms.html">Terms</a> <a href="impressum.html">Offenlegung</a></nav>
 <div class="card">
-<h1>Push-Up</h1>
-<p>Zählt Liegestütze, Kniebeugen, Sit-ups und Klimmzüge automatisch – mit EMOM, Tabata, AMRAP und mehr.</p>
-<p>Counts push-ups, squats, sit-ups and pull-ups automatically – with EMOM, Tabata, AMRAP and more.</p>
-<h2>Rechtliches / Legal</h2>
-<ul><li><a href="datenschutz.html">Datenschutz</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="konto-loeschen.html">Konto löschen / Delete account</a></li><li><a href="nutzungsbedingungen.html">Nutzungsbedingungen</a></li><li><a href="terms.html">Terms</a></li><li><a href="impressum.html">Offenlegung</a></li></ul>
+<div id="ok">
+<h1>✅ E-Mail bestätigt</h1>
+<p>Dein Konto ist aktiv. Öffne jetzt die App und melde dich mit deinem Benutzernamen und Passwort an.</p>
+<hr>
+<h1>✅ Email confirmed</h1>
+<p>Your account is active. Open the app now and sign in with your username and password.</p>
+</div>
+<div id="err" hidden>
+<h1>⚠️ Link ungültig oder abgelaufen</h1>
+<p>Bitte registriere dich in der App erneut oder fordere eine neue Bestätigungs-E-Mail an.</p>
+<hr>
+<h1>⚠️ Link invalid or expired</h1>
+<p>Please sign up again in the app or request a new confirmation email.</p>
+</div>
+<script>
+if (/error/.test(location.hash + location.search)) {
+  document.getElementById('ok').hidden = true;
+  document.getElementById('err').hidden = false;
+}
+</script>
 </div>
 <footer>© Siyar Yamin · <a href="mailto:siyar.yamin1@gmail.com">siyar.yamin1@gmail.com</a></footer>
 </main></body></html>
