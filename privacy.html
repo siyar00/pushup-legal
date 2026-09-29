@@ -1,28 +1,47 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy Policy – Push-Up</title>
+<title>Privacy Policy – Countra</title>
 <style>
-:root{--bg:#f4f5f8;--card:#fff;--text:#111318;--muted:#6b7280;--accent:#ff5a1f;--border:#e2e5ea}
-@media (prefers-color-scheme:dark){:root{--bg:#0b0d10;--card:#15181d;--text:#f4f5f7;--muted:#8a919c;--border:#2a2f37}}
+:root{--bg:#f4f5f8;--card:#fff;--text:#111318;--muted:#5b6270;--accent:#c2410c;--border:#e2e5ea;--hover:#f1f2f5}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0d10;--card:#15181d;--text:#f4f5f7;--muted:#8a919c;--accent:#ff8a5c;--border:#2a2f37;--hover:#1f232a}}
 *{box-sizing:border-box}body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
-main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:28px 24px}
-h1{font-size:30px;line-height:1.2;margin:0 0 4px}h2{font-size:19px;margin:28px 0 6px}
+main{max-width:760px;margin:0 auto;padding:16px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0 18px;position:relative}
+.brand{font-weight:900;font-size:26px;letter-spacing:-.5px;text-decoration:none;background:linear-gradient(135deg,#ff5a1f,#ff2d55);-webkit-background-clip:text;background-clip:text;color:transparent}
+.menu summary{list-style:none;cursor:pointer;font-weight:700;padding:10px 16px;border:1px solid var(--border);border-radius:14px;background:var(--card);user-select:none}
+.menu summary::-webkit-details-marker{display:none}
+.menu[open] summary{border-color:var(--accent)}
+.menu ul{position:absolute;right:0;top:64px;z-index:9;list-style:none;margin:0;padding:8px;min-width:260px;background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:0 12px 32px rgba(0,0,0,.15)}
+.menu li a{display:block;padding:10px 12px;border-radius:10px;color:var(--text);text-decoration:none}
+.menu li a:hover,.menu li a:focus{background:var(--hover)}
+.menu li a[aria-current]{color:var(--accent);font-weight:700}
+.menu .group{padding:8px 12px 2px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:24px 20px}
+h1{font-size:28px;line-height:1.2;margin:0 0 4px}
 .meta{color:var(--muted);margin:0 0 12px}a{color:var(--accent)}
-nav{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:18px;font-weight:600}
-.brand{font-weight:900;font-size:20px;margin-bottom:10px;background:linear-gradient(135deg,#ff5a1f,#ff2d55);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec{border-top:1px solid var(--border)}
+.sec summary{cursor:pointer;font-weight:700;font-size:17px;padding:14px 28px 14px 0;list-style:none;position:relative}
+.sec summary::-webkit-details-marker{display:none}
+.sec summary::after{content:"+";position:absolute;right:4px;top:12px;font-size:22px;color:var(--muted)}
+.sec[open] summary::after{content:"–"}
+.sec>div{padding:0 0 12px}
+.lead{margin:0 0 8px}
 footer{color:var(--muted);font-size:14px;margin-top:22px;text-align:center}
 ul{padding-left:22px}
 </style></head>
-<body><main><div class="brand">Push-Up</div><nav><a href="datenschutz.html">Datenschutz</a> <a href="privacy.html">Privacy</a> <a href="konto-loeschen.html">Konto löschen / Delete account</a> <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a> <a href="terms.html">Terms</a> <a href="impressum.html">Offenlegung</a></nav>
+<body><main>
+<header><a class="brand" href="index.html">Countra</a>
+<details class="menu"><summary aria-label="Menu">☰ Menu</summary>
+<ul><li class="group">Datenschutz / Privacy</li><li><a href="datenschutz.html">Datenschutzerklärung (DE)</a></li><li><a href="privacy.html" aria-current="page">Privacy Policy (EN)</a></li><li class="group">Nutzung / Terms</li><li><a href="nutzungsbedingungen.html">Nutzungsbedingungen (DE)</a></li><li><a href="terms.html">Terms of Use (EN)</a></li><li class="group">Konto / Account</li><li><a href="konto-loeschen.html">Konto löschen / Delete account</a></li><li class="group">Betreiber</li><li><a href="impressum.html">Impressum / Offenlegung</a></li></ul></details></header>
 <div class="card"><h1>Privacy Policy</h1>
 <p class="meta">Last updated: 2026-09-29</p>
-<h2>1. Controller</h2>
+<details class="sec"><summary>1. Controller</summary><div>
 <p>Siyar Yamin</p>
 <p>Am Pfenningberg 58a, 4040 Plesching, Österreich</p>
 <p>Email: <a href="mailto:siyar.yamin1@gmail.com">siyar.yamin1@gmail.com</a></p>
-<h2>2. Summary</h2>
+</div></details>
+<details class="sec" open><summary>2. Summary</summary><div>
 <ul>
 <li>No ads, no tracking, no sale of data.</li>
 <li>Without an account, all workouts stay on your device only.</li>
@@ -30,34 +49,40 @@ ul{padding-left:22px}
 <li>Apple Health, Health Connect and Strava are only used if you turn them on or connect them yourself.</li>
 <li>You can export and permanently delete your account and cloud data in the app at any time.</li>
 </ul>
-<h2>3. Use without an account</h2>
+</div></details>
+<details class="sec"><summary>3. Use without an account</summary><div>
 <p>Workouts, settings and daily goals are stored locally on the device. Nothing is transmitted to us.</p>
-<h2>4. Use with an account – which data?</h2>
+</div></details>
+<details class="sec"><summary>4. Use with an account – which data?</summary><div>
 <ul>
 <li>Account data: email address, password (stored only hashed), username, optionally display name, profile picture and country.</li>
 <li>Training data: exercise, repetitions (also per round/set and per minute or 10 seconds), duration, time, workout type and settings, counting method.</li>
 <li>Social data: friendships and requests, groups, challenges, blocks and reports.</li>
 <li>Security data: IP address and time of sign-in attempts (abuse protection), deleted after 24 hours at the latest.</li>
 </ul>
-<h2>4a. Optional connections</h2>
+</div></details>
+<details class="sec"><summary>4a. Optional connections</summary><div>
 <ul>
 <li>**Apple Health / Health Connect**: only if you turn on saving to Health, the app writes finished workouts (exercise, repetitions, duration, time) to your device&#x27;s health data. The app does not read health data. The data stays on your device or in your Apple/Google account; we do not receive it.</li>
 <li>**Strava**: only if you connect your Strava account, finished workouts (title, description, duration, time) are transferred to Strava Inc., USA. For this we store the access tokens issued by Strava and your Strava athlete ID on our server. You can disconnect at any time in the settings; we then revoke access at Strava and delete the tokens. Strava&#x27;s own privacy policy applies to processing by Strava.</li>
 </ul>
-<h2>4b. On the device only</h2>
+</div></details>
+<details class="sec"><summary>4b. On the device only</summary><div>
 <ul>
 <li>Reminders: local notifications, no push server.</li>
 <li>Lock screen / Dynamic Island or ongoing notification: shows repetitions and time only during a workout.</li>
 <li>Sensor recording (Settings → Sensor tuning): created on your device only and shared only if you share the file yourself.</li>
 </ul>
-<h2>5. Purposes and legal bases (GDPR)</h2>
+</div></details>
+<details class="sec"><summary>5. Purposes and legal bases (GDPR)</summary><div>
 <ul>
 <li>Providing account, sync, friends, groups and challenges: performance of contract (Art. 6(1)(b)).</li>
 <li>Appearing in public rankings (country, region, continent, world): only with your consent (Art. 6(1)(a)), off by default and revocable any time in your profile.</li>
 <li>Abuse and attack protection (rate limits, reports): legitimate interest (Art. 6(1)(f)).</li>
 <li>Apple Health / Health Connect and Strava: at your request to provide the feature (Art. 6(1)(b)); for health data additionally your explicit consent by turning it on or connecting (Art. 9(2)(a)), revocable at any time by turning it off or disconnecting.</li>
 </ul>
-<h2>6. Who sees what?</h2>
+</div></details>
+<details class="sec"><summary>6. Who sees what?</summary><div>
 <ul>
 <li>Signed-in users: username, display name, profile picture and country (for search).</li>
 <li>Friends: your training results (friends ranking).</li>
@@ -65,16 +90,19 @@ ul{padding-left:22px}
 <li>Public rankings: only with consent.</li>
 <li>Your email address is never visible to other users.</li>
 </ul>
-<h2>7. Recipients / processors</h2>
+</div></details>
+<details class="sec"><summary>7. Recipients / processors</summary><div>
 <ul>
 <li>Supabase Inc. (database, authentication, file storage), servers in Frankfurt am Main (EU), under a data processing agreement (Art. 28 GDPR).</li>
 <li>Apple and Google as distribution platforms under their own privacy policies.</li>
 <li>Strava Inc., USA – only with an active connection (see 4a). The transfer to the USA takes place at your request (Art. 49(1)(b) GDPR) or, where applicable, under the EU-US Data Privacy Framework.</li>
 </ul>
 <p>Apart from a Strava transfer you connect yourself, we do not transfer data to third countries; where Supabase uses sub-processors outside the EU, this is based on EU Standard Contractual Clauses.</p>
-<h2>8. Retention</h2>
+</div></details>
+<details class="sec"><summary>8. Retention</summary><div>
 <p>Data is kept until you delete your account. Deleting your account also revokes a Strava connection at Strava. After deletion all data is removed immediately; it may remain in the hosting provider&#x27;s backups for up to 30 days. Sign-in logs are deleted after 24 hours.</p>
-<h2>9. Device permissions</h2>
+</div></details>
+<details class="sec"><summary>9. Device permissions</summary><div>
 <ul>
 <li>Proximity and motion sensors: only to count repetitions, processed locally.</li>
 <li>Camera: to take a profile picture and (iPhone) to count push-ups by measuring distance with the TrueDepth camera. No images are stored or transmitted; only the distance is evaluated on the device.</li>
@@ -83,13 +111,27 @@ ul{padding-left:22px}
 <li>Health (Apple Health / Health Connect): write only, only after turning it on.</li>
 <li>Vibration and sound: workout signals.</li>
 </ul>
-<h2>10. Your rights</h2>
+</div></details>
+<details class="sec"><summary>10. Your rights</summary><div>
 <p>You have the right of access, rectification, erasure, restriction, data portability, objection and to withdraw consent at any time. Export and deletion are available directly in the app under Profile. You may also lodge a complaint with the competent supervisory authority: Austrian Data Protection Authority (Österreichische Datenschutzbehörde), Barichgasse 40–42, 1030 Vienna, Austria, www.dsb.gv.at.</p>
-<h2>11. Minimum age</h2>
+</div></details>
+<details class="sec"><summary>11. Minimum age</summary><div>
 <p>Use with an account is permitted from age 16; younger persons only with parental consent.</p>
-<h2>12. Security</h2>
+</div></details>
+<details class="sec"><summary>12. Security</summary><div>
 <p>Encrypted transmission (TLS), sign-in stored in the device keychain, database-level access control (Row Level Security) and limits on sign-in attempts.</p>
-<h2>13. Changes</h2>
-<p>We update this policy when the app changes. The current version is always available in the app.</p></div>
-<footer>© Siyar Yamin · <a href="mailto:siyar.yamin1@gmail.com">siyar.yamin1@gmail.com</a></footer>
-</main></body></html>
+</div></details>
+<details class="sec"><summary>13. Changes</summary><div>
+<p>We update this policy when the app changes. The current version is always available in the app.</p>
+</div></details></div>
+<footer>© Siyar Yamin · <a href="mailto:siyar.yamin1@gmail.com">siyar.yamin1@gmail.com</a><br>
+Icons: <a href="https://www.flaticon.com" rel="noopener">Flaticon</a></footer>
+</main>
+<script>
+// Menü schließt bei Klick außerhalb.
+document.addEventListener('click', e => {
+  const m = document.querySelector('.menu');
+  if (m.open && !m.contains(e.target)) m.open = false;
+});
+</script>
+</body></html>

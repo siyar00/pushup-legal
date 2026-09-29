@@ -1,27 +1,54 @@
 <!doctype html>
 <html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Push-Up – Push-Up</title>
+<title>Countra – Countra</title>
 <style>
-:root{--bg:#f4f5f8;--card:#fff;--text:#111318;--muted:#6b7280;--accent:#ff5a1f;--border:#e2e5ea}
-@media (prefers-color-scheme:dark){:root{--bg:#0b0d10;--card:#15181d;--text:#f4f5f7;--muted:#8a919c;--border:#2a2f37}}
+:root{--bg:#f4f5f8;--card:#fff;--text:#111318;--muted:#5b6270;--accent:#c2410c;--border:#e2e5ea;--hover:#f1f2f5}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0d10;--card:#15181d;--text:#f4f5f7;--muted:#8a919c;--accent:#ff8a5c;--border:#2a2f37;--hover:#1f232a}}
 *{box-sizing:border-box}body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
-main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:28px 24px}
-h1{font-size:30px;line-height:1.2;margin:0 0 4px}h2{font-size:19px;margin:28px 0 6px}
+main{max-width:760px;margin:0 auto;padding:16px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0 18px;position:relative}
+.brand{font-weight:900;font-size:26px;letter-spacing:-.5px;text-decoration:none;background:linear-gradient(135deg,#ff5a1f,#ff2d55);-webkit-background-clip:text;background-clip:text;color:transparent}
+.menu summary{list-style:none;cursor:pointer;font-weight:700;padding:10px 16px;border:1px solid var(--border);border-radius:14px;background:var(--card);user-select:none}
+.menu summary::-webkit-details-marker{display:none}
+.menu[open] summary{border-color:var(--accent)}
+.menu ul{position:absolute;right:0;top:64px;z-index:9;list-style:none;margin:0;padding:8px;min-width:260px;background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:0 12px 32px rgba(0,0,0,.15)}
+.menu li a{display:block;padding:10px 12px;border-radius:10px;color:var(--text);text-decoration:none}
+.menu li a:hover,.menu li a:focus{background:var(--hover)}
+.menu li a[aria-current]{color:var(--accent);font-weight:700}
+.menu .group{padding:8px 12px 2px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:24px 20px}
+h1{font-size:28px;line-height:1.2;margin:0 0 4px}
 .meta{color:var(--muted);margin:0 0 12px}a{color:var(--accent)}
-nav{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:18px;font-weight:600}
-.brand{font-weight:900;font-size:20px;margin-bottom:10px;background:linear-gradient(135deg,#ff5a1f,#ff2d55);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec{border-top:1px solid var(--border)}
+.sec summary{cursor:pointer;font-weight:700;font-size:17px;padding:14px 28px 14px 0;list-style:none;position:relative}
+.sec summary::-webkit-details-marker{display:none}
+.sec summary::after{content:"+";position:absolute;right:4px;top:12px;font-size:22px;color:var(--muted)}
+.sec[open] summary::after{content:"–"}
+.sec>div{padding:0 0 12px}
+.lead{margin:0 0 8px}
 footer{color:var(--muted);font-size:14px;margin-top:22px;text-align:center}
 ul{padding-left:22px}
 </style></head>
-<body><main><div class="brand">Push-Up</div><nav><a href="datenschutz.html">Datenschutz</a> <a href="privacy.html">Privacy</a> <a href="konto-loeschen.html">Konto löschen / Delete account</a> <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a> <a href="terms.html">Terms</a> <a href="impressum.html">Offenlegung</a></nav>
+<body><main>
+<header><a class="brand" href="index.html">Countra</a>
+<details class="menu"><summary aria-label="Menü">☰ Menü</summary>
+<ul><li class="group">Datenschutz / Privacy</li><li><a href="datenschutz.html">Datenschutzerklärung (DE)</a></li><li><a href="privacy.html">Privacy Policy (EN)</a></li><li class="group">Nutzung / Terms</li><li><a href="nutzungsbedingungen.html">Nutzungsbedingungen (DE)</a></li><li><a href="terms.html">Terms of Use (EN)</a></li><li class="group">Konto / Account</li><li><a href="konto-loeschen.html">Konto löschen / Delete account</a></li><li class="group">Betreiber</li><li><a href="impressum.html">Impressum / Offenlegung</a></li></ul></details></header>
 <div class="card">
-<h1>Push-Up</h1>
-<p>Zählt Liegestütze, Kniebeugen, Sit-ups und Klimmzüge automatisch – mit EMOM, Tabata, AMRAP und mehr.</p>
-<p>Counts push-ups, squats, sit-ups and pull-ups automatically – with EMOM, Tabata, AMRAP and more.</p>
-<h2>Rechtliches / Legal</h2>
-<ul><li><a href="datenschutz.html">Datenschutz</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="konto-loeschen.html">Konto löschen / Delete account</a></li><li><a href="nutzungsbedingungen.html">Nutzungsbedingungen</a></li><li><a href="terms.html">Terms</a></li><li><a href="impressum.html">Offenlegung</a></li></ul>
+<h1>Countra</h1>
+<p class="lead">Zählt Liegestütze, Kniebeugen, Sit-ups und Klimmzüge automatisch – mit EMOM, Tabata, AMRAP und mehr.</p>
+<p class="meta">Counts push-ups, squats, sit-ups and pull-ups automatically – with EMOM, Tabata, AMRAP and more.</p>
+<details class="sec"><summary>Rechtliches / Legal</summary><div><ul><li><a href="datenschutz.html">Datenschutzerklärung (DE)</a></li><li><a href="privacy.html">Privacy Policy (EN)</a></li><li><a href="nutzungsbedingungen.html">Nutzungsbedingungen (DE)</a></li><li><a href="terms.html">Terms of Use (EN)</a></li><li><a href="konto-loeschen.html">Konto löschen / Delete account</a></li><li><a href="impressum.html">Impressum / Offenlegung</a></li></ul></div></details>
+<details class="sec"><summary>Kontakt / Contact</summary><div><p><a href="mailto:siyar.yamin1@gmail.com">siyar.yamin1@gmail.com</a></p></div></details>
 </div>
-<footer>© Siyar Yamin · <a href="mailto:siyar.yamin1@gmail.com">siyar.yamin1@gmail.com</a></footer>
-</main></body></html>
+<footer>© Siyar Yamin · <a href="mailto:siyar.yamin1@gmail.com">siyar.yamin1@gmail.com</a><br>
+Icons: <a href="https://www.flaticon.com" rel="noopener">Flaticon</a></footer>
+</main>
+<script>
+// Menü schließt bei Klick außerhalb.
+document.addEventListener('click', e => {
+  const m = document.querySelector('.menu');
+  if (m.open && !m.contains(e.target)) m.open = false;
+});
+</script>
+</body></html>
